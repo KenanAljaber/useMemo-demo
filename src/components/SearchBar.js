@@ -4,6 +4,11 @@ import Results from "./Results";
 const SearchBar = ({items}) => {
     
     const [quey,setQuery]=useState("");
+    const [resultsCount,setResultsCount]=useState(0);
+
+    function handleResultscount(count){
+            setResultsCount(count);
+    }
 
    
     function handleOnChange(e){
@@ -11,9 +16,10 @@ const SearchBar = ({items}) => {
         setQuery(data);
     }
     return ( 
-        <div>
+        <div style={{display:"inline-flex",flexDirection:"column"}}>
             <input placeholder="search for something" onChange={handleOnChange} value={quey}/>
-            <Results items={items} query={quey}/>
+            <div style={{padding:"10px",fonSize:"18px",color:"#87a3b9",textAlign:"start"}}>{resultsCount} Results found</div>
+            <Results items={items} query={quey} onResultsCount={handleResultscount}/>
         </div>
      );
 }

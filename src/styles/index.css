@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+body{
+    text-align: center;
+    font-family: Arimo;
+}
+
 .btnsContainer{
 padding: 10px;
 }
@@ -7,15 +14,13 @@ button{
     border-style: none;
     background: #D4E1EB;
     border-radius: 10px;
+    font-family: Arimo;
 }
 
 button:hover{
     cursor: pointer;
     background-color: black;
     color: #D4E1EB;
-}
-body{
-    text-align: center;
 }
 
 input{
@@ -25,4 +30,5 @@ input{
     color: #D4E1EB;
     font-size: 15px;
     border-radius: 10px;
+    font-family: Arimo;
 }

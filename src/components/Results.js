@@ -3,7 +3,7 @@ import { useMemo } from "react";
 import MarkedResult from "./MarkedResult";
 
 
-const Results = ({ items, query }) => {
+const Results = ({ items, query, onResultsCount }) => {
 
     const results = useMemo(() => filterData(items, query), [items, query]);
 
@@ -14,7 +14,7 @@ const Results = ({ items, query }) => {
             query = query.toLowerCase();
             return query && query.length > 0 && title.indexOf(query) >= 0;
         })
-
+        onResultsCount(result.length);
         return result;
     }
 
