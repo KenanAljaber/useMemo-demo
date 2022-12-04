@@ -1,0 +1,28 @@
+.btnsContainer{
+padding: 10px;
+}
+button{
+    padding: 10px;
+    margin: 5px;
+    border-style: none;
+    background: #D4E1EB;
+    border-radius: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #D4E1EB;
+}
+body{
+    text-align: center;
+}
+
+input{
+    padding: 10px;
+    border-style: none;
+    background: black;
+    color: #D4E1EB;
+    font-size: 15px;
+    border-radius: 10px;
+}
